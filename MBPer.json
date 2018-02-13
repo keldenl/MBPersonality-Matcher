@@ -1,0 +1,251 @@
+{
+    "people": [
+        {
+            "name": "Ronney Do",
+            "personality": "ESFP"
+        },
+        {
+            "name": "Ling Huang",
+            "personality": "INFP"
+        },
+        {
+            "name": "Jessica Ong",
+            "personality": "INFJ"
+        },
+        {
+            "name": "Jayson Chen",
+            "personality": "ENFJ"
+        },
+        {
+            "name": "Patrice Huang",
+            "personality": "ESFP"
+        },
+        {
+            "name": "Leena Chhun",
+            "personality": "ENTJ"
+        },
+        {
+            "name": "Victoria Pao ",
+            "personality": "INFJ"
+        },
+        {
+            "name": "Kristy Chiang",
+            "personality": "ISFJ"
+        },
+        {
+            "name": "Jason Lee",
+            "personality": ""
+        },
+        {
+            "name": "Megan Lee",
+            "personality": "ESFN"
+        },
+        {
+            "name": "Kelley Chen",
+            "personality": "ESFP"
+        },
+        {
+            "name": "Kelden Lin",
+            "personality": "ESFP"
+        },
+        {
+            "name": "Jenson Yuen",
+            "personality": "..."
+        },
+        {
+            "name": "Shannon Hu",
+            "personality": "INFJ"
+        },
+        {
+            "name": "Leon Zhang",
+            "personality": "LITY"
+        },
+        {
+            "name": "Nicole Phoa",
+            "personality": "INFJ"
+        },
+        {
+            "name": "I-Miao Chien",
+            "personality": "INFP"
+        },
+        {
+            "name": "Andressa Chan",
+            "personality": "ISFJ"
+        },
+        {
+            "name": "Tiffany Lin",
+            "personality": "ISTP "
+        },
+        {
+            "name": "Eliza Huang",
+            "personality": "ESTJ"
+        },
+        {
+            "name": "Allison Chou",
+            "personality": "INFJ"
+        },
+        {
+            "name": "Angela Zhu",
+            "personality": "ENFP"
+        },
+        {
+            "name": "Josh Huang",
+            "personality": "ISFJ"
+        },
+        {
+            "name": "Ann Ni",
+            "personality": "INFP"
+        },
+        {
+            "name": "Joe Zhang",
+            "personality": "ES"
+        },
+        {
+            "name": "Alex Tang",
+            "personality": "ENFP"
+        },
+        {
+            "name": "Ariel Ho",
+            "personality": "ENFP"
+        },
+        {
+            "name": "Derek Wei",
+            "personality": "ENFJ"
+        },
+        {
+            "name": "Amy Lin",
+            "personality": "ENFP"
+        },
+        {
+            "name": "Zach Hsiao",
+            "personality": "INTP"
+        },
+        {
+            "name": "Jeremy Ku",
+            "personality": "INTP"
+        },
+        {
+            "name": "David Le",
+            "personality": "INTP"
+        },
+        {
+            "name": "Amber Hsu",
+            "personality": "ISTJ"
+        },
+        {
+            "name": "XY",
+            "personality": ""
+        },
+        {
+            "name": "Joycee Zhou",
+            "personality": ""
+        },
+        {
+            "name": "Mick Tsai",
+            "personality": ""
+        },
+        {
+            "name": "Kelvin Chung",
+            "personality": "ENFP"
+        },
+        {
+            "name": "Bradford Chen",
+            "personality": "INTP"
+        },
+        {
+            "name": "Vanessa Lin",
+            "personality": ""
+        },
+        {
+            "name": "Howard Sun",
+            "personality": ""
+        },
+        {
+            "name": "Gina Lai",
+            "personality": ""
+        },
+        {
+            "name": "Justin Ho",
+            "personality": ""
+        },
+        {
+            "name": "Tyler Ho",
+            "personality": ""
+        },
+        {
+            "name": "Anne Wu",
+            "personality": ""
+        },
+        {
+            "name": "Rico Tsang",
+            "personality": "ENTP"
+        }
+    ],
+
+    "pairings": [
+        {
+            "main" : "ISTJ",
+            "pairs" : ["ESFP", "ESTP"]
+        },
+        {
+            "main" : "ESTJ",
+            "pairs" : ["ISTP", "INTP"]
+        },
+        {
+            "main" : "ISFJ",
+            "pairs" : ["ESTP", "ESFP"]
+        },
+        {
+            "main" : "ESFJ",
+            "pairs" : ["ISFP", "INFP"]
+        },
+        {
+            "main" : "ISTP",
+            "pairs" : ["ESTJ", "ENTJ"]
+        },
+        {
+            "main" : "ESTP",
+            "pairs" : ["ISFJ", "ISTJ"]
+        },
+        {
+            "main" : "ESFP",
+            "pairs" : ["ISTJ", "TSFJ"]
+        },
+        {
+            "main" : "ISFP",
+            "pairs" : ["ESFJ", "ENFJ"]
+        },
+        {
+            "main" : "ENTJ",
+            "pairs" : ["INTP", "ISTP"]
+        },
+        {
+            "main" : "INTJ",
+            "pairs" : ["ENFP", "ENTP"]
+        },
+        {
+            "main" : "ENTP",
+            "pairs" : ["INFJ", "INTJ"]
+        },
+        {
+            "main" : "INTP",
+            "pairs" : ["ENTJ", "ESTJ"]
+        },
+        {
+            "main" : "ENFJ",
+            "pairs" : ["INFP", "ISFP"]
+        },
+        {
+            "main" : "INFJ",
+            "pairs" : ["ENTP", "ENFP"]
+        },
+        {
+            "main" : "ENFP",
+            "pairs" : ["INTJ", "INFJ"]
+        },
+        {
+            "main" : "INFP",
+            "pairs" : ["ENFJ", "ESFJ"]
+        }
+    ]
+}
