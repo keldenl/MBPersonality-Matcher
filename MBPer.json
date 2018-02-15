@@ -58,7 +58,7 @@
         },
         {
             "name": "Leon Zhang",
-            "personality": "LITY"
+            "personality": "ENFP"
         },
         {
             "name": "Nicole Phoa",
@@ -98,7 +98,7 @@
         },
         {
             "name": "Joe Zhang",
-            "personality": "ES"
+            "personality": "ESFP"
         },
         {
             "name": "Alex Tang",
@@ -126,7 +126,7 @@
         },
         {
             "name": "David Le",
-            "personality": "INTP"
+            "personality": "ENTJ"
         },
         {
             "name": "Amber Hsu",
@@ -209,7 +209,7 @@
         },
         {
             "main" : "ESFP",
-            "pairs" : ["ISTJ", "TSFJ"]
+            "pairs" : ["ISTJ", "ISFJ"]
         },
         {
             "main" : "ISFP",
