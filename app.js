@@ -2,6 +2,9 @@
 // Global variables
 let peopleList = [];
 let pairingList = [];
+let descList = [];
+const perTraits = [["E", "I"], ["S", "N"], ["T", "F"], ["J", "P"]];
+
 
 const readline = require('readline');
 
@@ -54,6 +57,11 @@ function importData() {
                 pairingList.push(prg);
             }
         }
+        else if (MBClass == "desc") {
+            for (let desc in currClass) {
+                descList.push(currClass[desc]);
+            }
+        }
     }
 }
 
@@ -61,44 +69,97 @@ function findFromPair(pairInput) {
     let returnPeople = []
     for (let person in peopleList) {
         if (pairInput.includes(peopleList[person].personality)) {
-            returnPeople.push([peopleList[person].name, peopleList[person].personality]);
+            returnPeople.push(peopleList[person]);
         }
     }
     return returnPeople;
 }
 
-function printComp(name, list) {
-    if (list.length > 0) {
-        console.log("Below are the people compatible with you: ")
-        for (let item in list) {
-            console.log("  - " + list[item][0] + " (" + list[item][1] + ")");
-        }
-    } else {
-        console.log("The system could not find anybody compatible with you.")
+function printComp(list) {
+    for (let item in list) {
+        console.log("  - " + list[item].getName() + " (" + list[item].getPersonality() + ")");
     }
 }
 
-function main() {
-    let currList = []
-    let found = false;
-    rl.question("Enter your name: ", (answer) => {
-        for (let person in peopleList) {
-            if (peopleList[person].name.toLowerCase() == answer.toLowerCase()) { // found the perosn
-                found = true;
-                for (let pair in pairingList) { // check the personality pairings
-                    if (pairingList[pair].main == peopleList[person].personality) { // if we're looking at this person's main personality
-                        currList = findFromPair(pairingList[pair].pairs);
-                        break;
-                    }
-                }
+function generateSimilar(per) {
+    if (!per) return [];
+
+    var returnPer = [];
+    for (var i = 0; i < per.length; i++) {
+        var currT = per.charAt(i);
+        var newTArr = perTraits[i];
+        var newT;
+        for (var t of newTArr) {
+            if (t != currT) {
+                newT = t;
             }
         }
-        if (found) {
-            printComp(answer, currList);
-        } else {
-            console.log("ERROR: 404 NOT FOUND. Make sure you included your last name and didn't make any spelling mistakes.")
+        var regex = new RegExp(currT);
+        var newPer = per.replace(regex, newT)
+        returnPer.push(newPer);
+    }
+
+    return returnPer;
+}
+
+function listPer(per) {
+    var returnList = [];
+
+    for (let person in peopleList) {
+        var currPer = peopleList[person].getPersonality();
+        if (per == currPer) returnList.push(peopleList[person]);
+    }
+
+    return returnList;
+}
+
+
+function main() {
+    let user;
+    let userFound = false;
+    rl.question("Enter your name: ", (answer) => {
+        // find the user in the database
+        for (let person in peopleList) {
+            if (peopleList[person].getName().toLowerCase() == answer.toLowerCase()) { // found the person
+                user = peopleList[person];
+                userFound = true;
+            }
         }
-      
+        // If user is in databse, find compatibility and similarities
+        if (userFound) {
+            let compList = []
+            for (let pair in pairingList) { // check the personality pairings
+                if (pairingList[pair].main == user.getPersonality()) { // if we're looking at this person's main personality
+                    compList = findFromPair(pairingList[pair].pairs);
+                    break;
+                }
+            }
+            console.log("Welcome back, " + user.getName() + "(" + user.getPersonality() + ")!" + "\n");
+
+            if (compList.length > 0) {
+                console.log("MATCH MAKER");
+                console.log("=========================================");
+                console.log("Below are the people compatible with you: ")
+                printComp(compList);
+            } else  {
+                console.log("Could not find anybody compatible with you.")
+            }
+
+            var simPerList = generateSimilar(user.getPersonality());
+            console.log("\n PEOPLE SIMILAR TO YOU");
+            console.log("=========================================");
+            for (var i = 0; i < simPerList.length; i++) {
+                if (listPer(simPerList[i]).length > 0) {
+                    console.log(simPerList[i]); // similar personality combo
+                    console.log(descList[i]);
+                    printComp(listPer(simPerList[i])); // list of people
+                    console.log("\n");
+                }
+            }
+
+        } else {
+            console.log("USER NOT FOUND. Make sure you included your last name and didn't make any spelling mistakes.")
+        }
         rl.close();
       });
 }

@@ -133,8 +133,8 @@
             "personality": "ISTJ"
         },
         {
-            "name": "XY",
-            "personality": ""
+            "name": "Sam Chao",
+            "personality": "INTJ"
         },
         {
             "name": "Joycee Zhou",
@@ -170,7 +170,7 @@
         },
         {
             "name": "Tyler Ho",
-            "personality": ""
+            "personality": "INFP"
         },
         {
             "name": "Anne Wu",
@@ -179,6 +179,10 @@
         {
             "name": "Rico Tsang",
             "personality": "ENTP"
+        },
+        {
+            "name": "Erika Yasuda",
+            "personality": "ENFJ"
         }
     ],
 
@@ -247,5 +251,7 @@
             "main" : "INFP",
             "pairs" : ["ENFJ", "ESFJ"]
         }
-    ]
+    ],
+
+    "desc" : ["The first criterion, Extraversion(E) – Introversion(I), signifies the source and direction of a person’s energy expression. An extravert’s source and direction of energy expression is mainly in the external world, while an introvert has a source of energy mainly in their own internal world.", "The second criterion, Sensing(S) – iNtuition(N), represents the method by which someone perceives information. Sensing means that a person mainly believes information he or she receives directly from the external world. Intuition means that a person believes mainly information he or she receives from the internal or imaginative world.", "The third criterion, Thinking(T) – Feeling(F), represents how a person processes information. Thinking means that a person makes a decision mainly through logic. Feeling means that, as a rule, he or she makes a decision based on emotion, i.e. based on what they feel they should do.", "The fourth criterion, Judging(J) – Perceiving(P), reflects how a person implements the information he or she has processed. Judging means that a person organizes all of his life events and, as a rule, sticks to his plans. Perceiving means that he or she is inclined to improvise and explore alternative options."]
 }
